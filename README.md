@@ -1,9 +1,8 @@
 # Good Practices / Buenas Prácticas / Bonnes Pratiques
 
 - [English Version](#english-version)
-- [Versión en Español](#versión-en-español)
 - [Version Française](#version-française)
-
+- [Versión en Español](#versión-en-español)
 
 ## English Version
 
@@ -34,35 +33,6 @@ Maintain a clear and scalable data model with proper relationships, data integri
 General best practices include writing maintainable code, following coding standards, and ensuring proper testing and code review processes.
 
 
-## Versión en Español
-
-### Introducción
-Se ha generado esta página para que resulte más sencillo conocer, listar y mantener las buenas prácticas para aconsejar a nuestros clientes en las auditorías de buenas prácticas.
-
-### Secciones de Buenas Prácticas
-
-#### 1. Seguridad
-Las prácticas de seguridad ayudan a proteger los datos sensibles y a garantizar la integridad del sistema. Esto incluye implementar mecanismos de autenticación robustos, encriptación de datos en reposo y en tránsito, y auditorías de seguridad regulares.
-
-#### 2. BPM (Gestión de Procesos de Negocio)
-Las buenas prácticas en BPM incluyen la optimización de los flujos de trabajo, garantizar la escalabilidad de los procesos y mantener la claridad en la documentación de los mismos.
-
-#### 3. Conectores
-Los conectores deben ser reutilizables, modulares y seguir patrones estandarizados de manejo de errores para garantizar la estabilidad y flexibilidad del sistema.
-
-#### 4. Diseñador de Interfaz
-La interfaz debe ser fácil de usar, accesible y coherente con las guías de diseño para mejorar la experiencia del usuario y la accesibilidad.
-
-#### 5. Extensión de APIs Rest
-Asegurar que las APIs estén versionadas, sean seguras y estén bien documentadas. Las mejores prácticas incluyen usar métodos HTTP adecuados, códigos de estado y validación de solicitudes.
-
-#### 6. BDM (Modelo de Datos de Negocio)
-Mantener un modelo de datos claro y escalable con relaciones adecuadas, integridad de los datos y documentación para facilitar su uso y futura expansión.
-
-#### 7. General
-Las buenas prácticas generales incluyen escribir código mantenible, seguir estándares de codificación y asegurar procesos adecuados de prueba y revisión de código.
-
-
 ## Version Française
 
 ### Introduction
@@ -90,3 +60,32 @@ Maintenez un modèle de données clair et évolutif avec des relations appropri�
 
 #### 7. Général
 Les bonnes pratiques générales incluent l'écriture d'un code maintenable, le respect des normes de codage et l'assurance de processus adéquats de test et de révision de code.
+
+
+## Versión en Español
+
+### Introducción
+Se ha generado esta página para que resulte más sencillo conocer, listar y mantener las buenas prácticas para aconsejar a nuestros clientes en las auditorías de buenas prácticas.
+
+### Secciones de Buenas Prácticas
+
+#### 1. Seguridad
+Las prácticas de seguridad ayudan a proteger los datos sensibles y a garantizar la integridad del sistema. Esto incluye implementar mecanismos de autenticación robustos, encriptación de datos en reposo y en tránsito, y auditorías de seguridad regulares.
+
+#### 2. BPM (Gestión de Procesos de Negocio)
+Las buenas prácticas en BPM incluyen la optimización de los flujos de trabajo, garantizar la escalabilidad de los procesos y mantener la claridad en la documentación de los mismos.
+
+#### 3. Conectores
+Los conectores deben ser reutilizables, modulares y seguir patrones estandarizados de manejo de errores para garantizar la estabilidad y flexibilidad del sistema.
+
+#### 4. Diseñador de Interfaz
+La interfaz debe ser fácil de usar, accesible y coherente con las guías de diseño para mejorar la experiencia del usuario y la accesibilidad.
+
+#### 5. Extensión de APIs Rest
+Asegurar que las APIs estén versionadas, sean seguras y estén bien documentadas. Las mejores prácticas incluyen usar métodos HTTP adecuados, códigos de estado y validación de solicitudes.
+
+#### 6. BDM (Modelo de Datos de Negocio)
+Mantener un modelo de datos claro y escalable con relaciones adecuadas, integridad de los datos y documentación para facilitar su uso y futura expansión.
+
+#### 7. General
+Las buenas prácticas generales incluyen escribir código mantenible, seguir estándares de codificación y asegurar procesos adecuados de prueba y revisión de código.
