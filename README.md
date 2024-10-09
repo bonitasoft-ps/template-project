@@ -56,14 +56,62 @@ This page has been created to make it easier to know, list, and maintain good pr
 ### 3. Connectors
 > Connectors should be reusable, modular, and follow standardized error handling patterns to ensure system stability and flexibility.
 
+1. Error handling by capturing errors and displaying them in the log.
+2. Making sure to close connections in finally.
+3. Try not to return complex objects that depend on libraries (json object, "invoice", ... the library must be added in the connector and in the process); do not return BDM objects. Return externally readable objects, for example a Map object.
+4. Do not have too many dependencies; try to encapsulate the logic.
+5. Connectors that are developed outside the Studio with unit tests.
+6. Catch errors; if it fails, you should know why it failed (try catch, logs, etc).
+7. Use parameters via the expression editor to define the input data to the connector.
+
 ### 4. UI Designer
 > The UI should be user-friendly, accessible, and consistent with design guidelines to improve the user experience and accessibility.
+
+1. Define correct number of REST API Extensions, do not call more than once to the same service (by fragments or by widgets). Limiting the number of API calls.
+2. Reuse code by implementing or using custom widgets.
+3. Include in the constraints via Widget, via JS, and/or via contract.
+4. External API to retrieve information at the top of the page, and you want to refresh information, use interpolation.
+5. Define one or more controller classes (ctrl), all business logic.
+6. Use js functions to process data, open modals, etc. (a kind of library).
+7. Use widgets do not use angular js services (it is easier to migrate widgets using only javascript).
+8. Widgets should not make rest calls, depending on whether the team is technical or not, but it is better to externalise the calls from outside, from the pages or forms.
+   On a page or form in its page or form information section, the APIs that are used on that page or form are indicated. If calls are made from widgets, they never appear, and permissions must be managed manually.
+   If fragments are used, calls should generally be made from fragments.
+9. It is recommended to make widgets that are dumb and the fragments (for reuse) or, failing that, the page or form that implements the logic.
+10. Define the look and feel using responsive functionality, different sizes, ...
+11. Define different variables:
+   - Java script variable called "log": show with the console.log variables or possible warnings or errors. Help for the developer
+   - Url parameter called "debug": if true, a text area will be shown where variables are shown with the content, to help the development {{ variable | json }}.
+   - Temp variable: with different nested variables
+   - Java script variable called "functions": with the functions you want to use.
+12. Use fragments to improve maintainability and reusability 
 
 ### 5. Rest APIs Extension
 > Ensure APIs are versioned, secure, and well-documented. Best practices include using proper HTTP methods, status codes, and request validation.
 
+1. It is recommended to use it to retrieve information for display.
+2. Any action should be done through a process. If an action is taken, do it against Bonita, not to the outside world.
+3. All expensive queries should be done from the Rest API Extension (server), instead of from the browser.
+4. You have read access to the WDB; all other actions should be performed from the processes.
+5. You can access other databases, but be sure to close connections.
+6. You can access other REST APIs and other Web Services (WS), but only for reading or querying.
+7. It is important to carry out a good management and definition of permissions and organisation.
+
 ### 6. BDM (Business Data Model)
 > Maintain a clear and scalable data model with proper relationships, data integrity, and documentation for ease of use and future expansion.
+
+### 6. BDM Queries and Access
+> Best practices for querying and accessing the BDM effectively to ensure performance and data integrity.
+
+1. What to do when a query is needed to obtain information from two or more BDM tables? Can queries be made with JPQL on several objects? No. It is recommended to develop a Rest API Extension that executes the query directly.
+2. Specify unique elements.
+3. Specify indexes according to the queries performed (predefined and custom queries do not create indexes automatically). It is important not to generate indexes just for the sake of generating them. Review the queries used and generate indexes only for the queries used.
+4. Define the necessary queries with the necessary fields, no more.
+5. Define accesses correctly.
+6. Lazy instead of eager (Use Lazy whenever possible, except in cases of special needs).
+7. Use a naming convention for BDM Objects (i.e. XXXObject, where XXX is the project trigram and object the name of the BDM object (the DB table).)
+8. A modification of the BDM should never be made outside the process because it could not be used within the process.
+
 
 ### 7. General
 > General best practices include writing maintainable code, following coding standards, and ensuring proper testing and code review processes.
