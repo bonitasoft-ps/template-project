@@ -52,3 +52,19 @@ This page has been created to make it easier to know, list, and maintain good pr
     2. Capture the message in a generic way (event sub-process).
     3. Perform a check prior to sending the message to verify that the instance or instances of the process or processes to which they are sent are active, and have not finished, and even if the flow has already passed through where the event can be captured.
 15. Review how actors are obtained, how actor filters are implemented.
+
+### 3. Connectors
+> Connectors should be reusable, modular, and follow standardized error handling patterns to ensure system stability and flexibility.
+
+### 4. UI Designer
+> The UI should be user-friendly, accessible, and consistent with design guidelines to improve the user experience and accessibility.
+
+### 5. Rest APIs Extension
+> Ensure APIs are versioned, secure, and well-documented. Best practices include using proper HTTP methods, status codes, and request validation.
+
+### 6. BDM (Business Data Model)
+> Maintain a clear and scalable data model with proper relationships, data integrity, and documentation for ease of use and future expansion.
+
+### 7. General
+> General best practices include writing maintainable code, following coding standards, and ensuring proper testing and code review processes.
+
