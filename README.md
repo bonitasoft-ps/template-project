@@ -1,8 +1,4 @@
-# Good Practices / Buenas Prácticas / Bonnes Pratiques
-
-- [English Version](#english-version)
-- [Version Française](#version-française)
-- [Versión en Español](#versión-en-español)
+# [Good Practices](#english-version) / [Bonnes Pratiques](#version-française) / [Buenas Prácticas](#versión-en-español)
 
 ## English Version
 
