@@ -100,9 +100,6 @@ This page has been created to make it easier to know, list, and maintain good pr
 ### 6. BDM (Business Data Model)
 > Maintain a clear and scalable data model with proper relationships, data integrity, and documentation for ease of use and future expansion.
 
-### 6. BDM Queries and Access
-> Best practices for querying and accessing the BDM effectively to ensure performance and data integrity.
-
 1. What to do when a query is needed to obtain information from two or more BDM tables? Can queries be made with JPQL on several objects? No. It is recommended to develop a Rest API Extension that executes the query directly.
 2. Specify unique elements.
 3. Specify indexes according to the queries performed (predefined and custom queries do not create indexes automatically). It is important not to generate indexes just for the sake of generating them. Review the queries used and generate indexes only for the queries used.
