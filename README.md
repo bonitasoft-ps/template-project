@@ -50,16 +50,16 @@ This page has been created to make it easier to know, list, and maintain good pr
     - Parameters: `paramCode`, `codeP`, `codeParam`,...
     - BDM Variables:  `bdmObject`, `objectB`, `objectBdm`, `object`,...
     - Script Variables: `auxCode`, `codeAux`, `code`,...
-10. Manage all the necessary operations in the applications for integrations with other systems, or actions (insert, update, delete) on BDM, other databases, etc.
-11. Use a .bar file for each environment, defining in the Studio the parameters, actors, etc. according to the selected environment.
-12. Ensure that all configurations (actors, and parameters) per environment are filled in.
-13. Define the names of the BPM elements with meaningful names. Do not use e.g. Gate1, Start1, End1, Step1, etc.
-14. Care must be taken to define messages that are not captured. Since they will be listened to infinitely. It will cause the database to grow.
+11. Manage all the necessary operations in the applications for integrations with other systems, or actions (insert, update, delete) on BDM, other databases, etc.
+12. Use a .bar file for each environment, defining in the Studio the parameters, actors, etc. according to the selected environment.
+13. Ensure that all configurations (actors, and parameters) per environment are filled in.
+14. Define the names of the BPM elements with meaningful names. Do not use e.g. Gate1, Start1, End1, Step1, etc.
+15. Care must be taken to define messages that are not captured. Since they will be listened to infinitely. It will cause the database to grow.
     Possible solutions:
     1. Capture the message (through events that capture messages).
     2. Capture the message in a generic way (event sub-process).
     3. Perform a check prior to sending the message to verify that the instance or instances of the process or processes to which they are sent are active, and have not finished, and even if the flow has already passed through where the event can be captured.
-15. Review how actors are obtained, how actor filters are implemented.
+16. Review how actors are obtained, how actor filters are implemented.
 
 ### 3. Connectors
 > Connectors should be reusable, modular, and follow standardized error handling patterns to ensure system stability and flexibility.
