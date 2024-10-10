@@ -126,10 +126,10 @@ This page has been created to make it easier to know, list, and maintain good pr
 3. Define unit tests on connectors, etc.
 4. Define and use BCD for the automatic deployment of processes, facilitating deployment and avoiding errors.
 5. Review dynamic and static permissions for profiles. Get all the permissions associated with the profiles. Get a list of the applications and their profiles, which profiles apply to each application. That is, which persons, groups or roles have access to the applications.
-6. CLEAN CODE
-   - Clean Code refers to a programming style that emphasises readability, maintainability and clear structuring of source code. Robert C. Martin, also known as "Uncle Bob", wrote a book called "Clean Code: A Handbook of Agile Software Craftsmanship", where he presents principles and practices for writing clean, quality code.
-   - This style is proposed because project code at times has not been thought of and implemented as maintainable, readable and reusable.
-   - Here are some key Clean Code principles that can be applied to both Java and Groovy:
+6. **CLEAN CODE**
+- Clean Code refers to a programming style that emphasises readability, maintainability and clear structuring of source code. Robert C. Martin, also known as "Uncle Bob", wrote a book called "Clean Code: A Handbook of Agile Software Craftsmanship", where he presents principles and practices for writing clean, quality code.
+- This style is proposed because project code at times has not been thought of and implemented as maintainable, readable and reusable.
+- Here are some key Clean Code principles that can be applied to both Java and Groovy:
    1. **Meaningful Names:**
       - Use descriptive names for classes, methods, variables, and other code elements.
       - Avoid short, ambiguous names. A good variable or method name should explain its purpose without the need for additional comments.
@@ -159,12 +159,12 @@ This page has been created to make it easier to know, list, and maintain good pr
    10. **Use Libraries and Frameworks:**
       - Take advantage of existing libraries and frameworks instead of reinventing the wheel.
       - If you use Groovy together with Java, familiarise yourself with the best practices of both languages. 
-   - **To carry out these principles in Java and Groovy:**
-      - Conduct Code Reviews: Collaborate with your team to review code regularly. Discuss and adjust based on feedback.
-      - Participate in the Community: Take advantage of online resources, forums, and communities to learn from others and share knowledge.
-      - Automated Testing: Write unit and integration tests to validate your code.
-      - Constantly Refactor: Watch for refactoring opportunities to continually improve code quality.
-      - Apply SOLID Principles: Familiarise yourself with the SOLID principles of software design and try to apply them in your code.
-   - Remember that clean code is subjective in many ways and can vary depending on the context and preferences of the team.
-   - The key is communication and collaboration to establish standards and practices that everyone on the team understands and accepts.
+- **To carry out these principles in Java and Groovy:**
+   - Conduct Code Reviews: Collaborate with your team to review code regularly. Discuss and adjust based on feedback.
+   - Participate in the Community: Take advantage of online resources, forums, and communities to learn from others and share knowledge.
+   - Automated Testing: Write unit and integration tests to validate your code.
+   - Constantly Refactor: Watch for refactoring opportunities to continually improve code quality.
+   - Apply SOLID Principles: Familiarise yourself with the SOLID principles of software design and try to apply them in your code.
+- Remember that clean code is subjective in many ways and can vary depending on the context and preferences of the team.
+- The key is communication and collaboration to establish standards and practices that everyone on the team understands and accepts.
 
