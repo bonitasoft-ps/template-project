@@ -1,6 +1,6 @@
 # Good Practices
 
-## Introductio
+## Introduction
 This page has been created to make it easier to know, list, and maintain good practices in order to advise our clients on good practice audits.
 
 ## Best Practices Sections
